@@ -41,8 +41,7 @@ You can use **Power Apps** to create apps that run on mobile devices, tablets, a
 
 1. To enable users to send emails to a designated recipient, we can incorporate a **Send Mail button** into the app's functionality. To do this, we can create a button function that includes the following code:
 
-    ``` PowerAppsMail.Run(TextInput2.Text, TextInput2_1.Text, TextInput2_2.Text)
-    ```
+    `PowerAppsMail.Run(TextInput2.Text, TextInput2_1.Text, TextInput2_2.Text)`.
 This code will allow users to input the recipient's **email address** in **TextInput2**, the email **subject** in **TextInput2_1**, and the **email message** in **TextInput2_2**. 
 In addition, we can include a reset function to clear the input fields after the email is sent. This can be done using the Reset function for each input field: 
 
