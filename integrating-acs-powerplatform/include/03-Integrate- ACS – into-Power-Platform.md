@@ -10,7 +10,7 @@ You can use **Power Apps** to create apps that run on mobile devices, tablets, a
 
 - If you do not have access to Power Platforme access, you can setup your [Microsoft 365 developer tenant.](https://developer.microsoft.com/microsoft-365/dev-program)
 
-[Learn the business value and product capabilities of Microsoft Power Platform. Create simple Power Apps, connect data with Microsoft Dataverse, build a Power BI Dashboard, automate a process with Power Automate, and build a chatbot with Power Virtual Agents.](https://learn.microsoft.com/en-us/certifications/power-platform-fundamentals/)
+Learn the business value and product capabilities of Microsoft Power Platform. Create simple Power Apps, connect data with Microsoft Dataverse, build a Power BI Dashboard, automate a process with Power Automate, and build a chatbot with Power Virtual Agents in  [Power Platform fundamental](https://learn.microsoft.com/en-us/certifications/power-platform-fundamentals/)
 
 ### Create a flow using Microsoft Power Automate
 
@@ -22,9 +22,9 @@ You can use **Power Apps** to create apps that run on mobile devices, tablets, a
 
 :::image type="content" source="../media/8.Creating-an-instant-flow-with-Power-Apps-button.png" alt-text="Creation of a cloud flow":::
 
-1. Next, we can set up a **Power Apps button** flow that utilizes **Azure Communication Services to send emails**. This will enable you to send emails directly from your application without the need for a separate email client. 
+2. Next, we can set up a **Power Apps button** flow that utilizes **Azure Communication Services to send emails**. This will enable you to send emails directly from your application without the need for a separate email client. 
 
-1. We'll walk you through the necessary steps to create this flow, which will leverage the email functionality of **Azure Communication Services**.
+3. We'll walk you through the necessary steps to create this flow, which will leverage the email functionality of **Azure Communication Services**.
 
 ::image type="content" source="../media/9.creating-flow.png" alt-text="Creation of a cloud flow":::
 
@@ -35,37 +35,37 @@ You can use **Power Apps** to create apps that run on mobile devices, tablets, a
 
 :::image type="content" source="../media/10.Power-Apps-Home-page.png" alt-text="Creation of a cloud flow":::
 
-1. After typing our instructions and the model of our application we can now **create app**.
+2. After typing our instructions and the model of our application we can now **create app**.
 
 :::image type="content" source="../media/11.Power-Apps-create-with-copilote.png" alt-text="Power Apps create with copilote":::
 
-1. To enable users to send emails to a designated recipient, we can incorporate a **Send Mail button** into the app's functionality. To do this, we can create a button function that includes the following code:
+3. To enable users to send emails to a designated recipient, we can incorporate a **Send Mail button** into the app's functionality. To do this, we can create a button function that includes the following code:
 
-    `PowerAppsMail.Run(TextInput2.Text, TextInput2_1.Text, TextInput2_2.Text)`.
+    `PowerAppsMail.Run(TextInput2.Text, TextInput2_1.Text, TextInput2_2.Text)`
+
 This code will allow users to input the recipient's **email address** in **TextInput2**, the email **subject** in **TextInput2_1**, and the **email message** in **TextInput2_2**. 
 In addition, we can include a reset function to clear the input fields after the email is sent. This can be done using the Reset function for each input field: 
 
-1. In addition, we can include a reset function to clear the input fields after the email is sent. This can be done using the **Reset function** for each input field: 
-
-  ``` Reset(TextInput2); Reset(TextInput2_1); Reset(TextInput2_2)
-    ```
+4. In addition, we can include a reset function to clear the input fields after the email is sent. This can be done using the **Reset function** for each input field:
+   
+   ` Reset(TextInput2); Reset(TextInput2_1); Reset(TextInput2_2)`
 
  By incorporating these functions, users can easily send emails from within the app and keep all communication centralized.
 
 :::image type="content" source="../media/12.Overview-of-the-app-with-the bouton-sending-mail.png" alt-text="Overview of the app with the bouton sending mail":::
 
-1. Once all configurations have been completed, the app is ready to be launched and used.
+5. Once all configurations have been completed, the app is ready to be launched and used.
 
 :::image type="content" source="../media/13.sending-mail.png" alt-text="sending mail":::
 
-1. When an email is sent using the app, the recipient should receive the email in their inbox. They can then open and read the email as they normally would through their email service provider.
+6. When an email is sent using the app, the recipient should receive the email in their inbox. They can then open and read the email as they normally would through their email service provider.
 
 :::image type="content" source="../media/14.mail-receive.png" alt-text="mail-receive":::
 
-1. Once you've completed all the necessary steps, you can **Publish** your application with the integrated **Azure Communication Services** features. This will enable you to provide your users with seamless communication and email capabilities directly from within your application. 
+7. Once you've completed all the necessary steps, you can **Publish** your application with the integrated **Azure Communication Services** features. This will enable you to provide your users with seamless communication and email capabilities directly from within your application. 
 
-1. To ublish an app, save the app if you’ve made any changes, and then select Publish from the File menu in **Power Apps Studio**. In the **Publish dialog**, you can select settings such as the name of the app, an icon for the app, and a description.
+9. To ublish an app, save the app if you’ve made any changes, and then select Publish from the File menu in **Power Apps Studio**. In the **Publish dialog**, you can select settings such as the name of the app, an icon for the app, and a description.
 
 :::image type="content" source="../media/15.Publish-the-app.png" alt-text="Publish the app":::
 
-1. To install an app in the environment view, sign in to the **Power Platform admin center**, select **Environments**, and then select an environment. Under **Resources**, select **Dynamics 365 apps**, and then select Install app. Agree to the terms of service, and then select **Install**.
+10. To install an app in the environment view, sign in to the **Power Platform admin center**, select **Environments**, and then select an environment. Under **Resources**, select **Dynamics 365 apps**, and then select Install app. Agree to the terms of service, and then select **Install**.
